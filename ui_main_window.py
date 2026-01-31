@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'tutorial_01.ui'
+# Form implementation generated from reading ui file 'tutorial_02.ui'
 #
 # Created by: PyQt6 UI code generator 6.10.2
 #
@@ -12,20 +12,40 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(400, 300)
-        MainWindow.setWindowOpacity(0.5)
+        MainWindow.resize(800, 600)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(110, 110, 181, 81))
+        self.label.setGeometry(QtCore.QRect(94, 95, 260, 120))
         font = QtGui.QFont()
         font.setPointSize(20)
-        font.setBold(True)
-        font.setItalic(True)
-        font.setWeight(75)
         self.label.setFont(font)
+        self.label.setStyleSheet("background-color:#f54272;\n"
+"color:yellow;\n"
+"border:2px solid black\n"
+"")
+        self.label.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
         self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(140, 340, 260, 120))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("background-color:#72c8e8;\n"
+"")
+        self.label_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(120, 240, 250, 70))
+        self.label_3.setText("")
+        self.label_3.setPixmap(QtGui.QPixmap("Assests/mr-coder.png"))
+        self.label_3.setScaledContents(True)
+        self.label_3.setObjectName("label_3")
         MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
@@ -35,8 +55,9 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Tutorial 1"))
-        self.label.setText(_translate("MainWindow", "Hello World!"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "Hello World"))
+        self.label_2.setText(_translate("MainWindow", "It is me"))
 
 
 if __name__ == "__main__":
